@@ -1,0 +1,26 @@
+name: Auto Update mwriTV
+on:
+  schedule:
+    - cron: '0 0 * * *' # هر شب ساعت ۱۲
+  workflow_dispatch: # اجازه اجرای دستی هم می‌دهد
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install Dependencies
+        run: pip install requests
+      - name: Run Tester
+        run: python checker.py
+      - name: Deploy Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "mwriBot"
+          git add valid_channels.m3u
+          git commit -m "Auto-update valid streams" || exit 0
+          git push

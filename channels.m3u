@@ -1,0 +1,13 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://i.ibb.co/3WfK8qS/bein.png" group-title="Sports",BeIN Sports Global
+https://p-beinsport-th.shls.nice.com/live/beinsport-th/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/6y4tW6R/sky.png" group-title="Sports",Sky News International
+https://skynews-skynews-main-1-eu.rakuten.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/v4K7v0k/cnn.png" group-title="News",CNN International
+https://cnn-cnninternational-1-gb.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/0XG0Z8H/aljazeera.png" group-title="News",Al Jazeera English
+https://live-als-hls-web-aje.getaj.net/AJE/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.ibb.co/VvM5Q6J/bloomberg.png" group-title="News",Bloomberg TV
+https://bloomberg.com/media-manifest/streams/global-us.m3u8
+#EXTINF:-1,France 24 English
+https://static.france24.com/live/F24_EN_LO_HLS/live_tv.m3u8
